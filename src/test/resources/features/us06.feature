@@ -2,6 +2,10 @@
 Feature: Books module
   As a librarian, I should be able to add new book into library
 
+  Background:
+
+
+  @B28G27-142 @wip
   Scenario Outline: Verify added book is matching with DB
     Given the "librarian" on the home page
     And the user navigates to "Books" page

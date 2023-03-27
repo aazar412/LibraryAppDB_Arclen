@@ -21,12 +21,18 @@ public class BookPage extends BasePage {
     @FindBy(name = "name")
     public WebElement bookName;
 
+    ////input[@placeholder='Book Name'] <--bookname
 
     @FindBy(xpath = "(//input[@type='text'])[4]")
     public WebElement author;
 
     @FindBy(xpath = "//div[@class='portlet-title']//a")
     public WebElement addBook;
+    //or
+    /*
+     @FindBy(xpath = "//a[@class='btn btn-lg btn-outline btn-primary btn-sm add_book_btn']")
+    public WebElement addBook;
+     */
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveChanges;
@@ -47,6 +53,14 @@ public class BookPage extends BasePage {
 
     @FindBy(id = "description")
     public WebElement description;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[1]/a[1]")
+    public WebElement editBookButton;
+
+    //locator xpath = //label[@class='control-label']
+    @FindBy(xpath = "//label[@class='control-label']")
+    public WebElement formElements;
+
 
 
 

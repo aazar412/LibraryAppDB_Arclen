@@ -15,6 +15,17 @@ select * from users;
 
 
 
--- US 03
+-- US 02
 select count(*) from book_borrow
 where is_returned=0;
+
+-- US 03
+SELECT * FROM book_categories;
+
+-- US 04
+SELECT * FROM books
+where name like 'Clean Code';
+
+-- US5
+-- count the categories
+

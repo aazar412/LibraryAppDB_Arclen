@@ -1,6 +1,7 @@
 package com.library.pages;
 
 import com.library.utility.Driver;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,6 +18,10 @@ public class DashBoardPage extends BasePage
 
     @FindBy(id = "book_count")
     public WebElement booksNumber;
+
+    @FindBy (xpath = "//a[@href='#books']")
+    public WebElement bookLink;
+
 
 
 
